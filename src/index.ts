@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 import { ShewenyClient } from "sheweny";
 import config from "./config";
 
@@ -25,7 +27,7 @@ const client = new ShewenyClient({
       directory: "./inhibitors",
     },
   },
-  mode : "development", // Change to production for production bot
+  mode: "development", // Change to production for production bot
 });
 
 client.login(config.DISCORD_TOKEN);
